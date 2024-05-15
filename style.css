@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4cfde;
+    
+
+  /* background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);   */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  min-height: 100vh;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 400;
+  color: darkred;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px red, 0 0 1em pink, 0 0 0.2em pink;
+
+}
+ .container h1 img{
+     width: 70px;
+     height: 47px;
+}
+
+#to-do-list {
+  height: 40px;
+  border-radius: 30px 50px;
+}
+
+#new-list-item {
+  width: 600px;
+  height: 55px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  text-align: center;
+  color: darkred;
+  background: #e1f2de;
+  box-shadow: 5px 10px #888888;
+  font-size: 20px;
+}
+
+#new-list-item::placeholder {
+  font-size: 16px;
+  color: darkcyan;
+}
+
+#new-list-item:hover{
+  color: #000;
+  background-color: aliceblue;
+  font-size: 20px;
+}
+
+#add {
+  width: 30px;
+  height: 45px;
+  background: darkred;
+  color:#fff;
+  outline: none;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 5px 10px #888888;
+  }
+#add:hover {
+  
+  border: 3px solid rgb(218, 225, 182) ;
+}
+.container h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: pink;
+  margin-top: 20px;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+/* new list item */
+
+.new-item{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ border: 2px solid darkred;
+ padding: 10px;
+ border-top-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+ width: 640px;
+ height: 50px;
+ background-color: whitesmoke;
+}
+
+.new-item span{
+  
+  margin-right: 10px;
+  width: 70%;
+  overflow: hidden;
+  font-size: 20px;
+  color: darkred;
+}
+
+.new-item.checked{
+
+  background-color: #84dccf;
+}
+
+button{
+  margin: 5px;
+  border: none;
+  background: transparent;
+  cursor:pointer;
+  font-size: 20px;
+}
+button .delete{
+color: red;
+}
+button .edit{
+  color: blue;
+}
