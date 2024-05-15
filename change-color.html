@@ -1,69 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Java Script DOM Project</title>
     <link rel="shortcut icon" href="images/js-logo.webp" type="image/x-icon" />
     <style>
-        body{
-            background-image: url(images/img.webp);
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;            
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container{
-            color: aqua;
-            width: 700px;
-            height: 500px;
-            background: white;
-            border: 3px solid black;
-            box-shadow: 0px 0px 3px 3px  grey;
-            border-radius: 30px;
-            
-        }
-        .box{
-            color: darkred;
-            width: 300px;
-            background: white;
-            height: 200px;
-            border: 1px solid #000;
-            margin: 50px 150px;
-            box-shadow: 0px 0px 3px 3px  grey;
-            background-color: #ffcbcb;
-        }
-        button{
-            margin: 50px 150px;
-            font-size: 16px;
-            border-radius: 8px;
-            background:#ff0080 ;
-            height: 40px;
-            width: 150px;
-        }
-        .color-pick{
-            width: 80px;
-            height: 40px;
-        }
+      body {
+        background-image: url(images/img.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        color: aqua;
+        width: 700px;
+        height: 500px;
+        background: white;
+        border: 3px solid black;
+        box-shadow: 0px 0px 3px 3px grey;
+        border-radius: 30px;
+      }
+      .box {
+        color: darkred;
+        width: 300px;
+        background: white;
+        height: 200px;
+        border: 1px solid #000;
+        margin: 50px 150px;
+        box-shadow: 0px 0px 3px 3px grey;
+        background-color: #ffcbcb;
+      }
+      button {
+        margin: 50px 150px;
+        font-size: 16px;
+        border-radius: 8px;
+        background: #ff0080;
+        height: 40px;
+        width: 150px;
+      }
+      .color-pick {
+        width: 80px;
+        height: 40px;
+      }
     </style>
-</head>
-<body>
-  <div class="container">
-        <div class="box"></div>         
-        <button onclick="changeColor();">Change Color</button> 
-        <input type="color" class="color-pick" >  
-  </div>
-  <script>
-    function changeColor(){
-        
-        const box= document.querySelector(".box");
-        
-        const color= document.querySelector("input[type=color]");
-        
-        box.style.backgroundColor=color.value;
-    }
-  </script>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <button onclick="changeColor();">Change Color</button>
+      <input type="color" class="color-pick" />
+    </div>
+
+    <script>
+      function changeColor() {
+        const box = document.querySelector(".box");
+
+        const color = document.querySelector("input[type=color]");
+
+        box.style.backgroundColor = color.value;
+      }
+    </script>
+  </body>
 </html>
