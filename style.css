@@ -31,7 +31,7 @@ body {
   font-weight: 400;
   color: darkred;
   margin-bottom: 20px;
-  text-shadow: 1px 1px 2px red, 0 0 1em pink, 0 0 0.2em pink;
+  /* text-shadow: 1px 1px 2px red, 0 0 1em pink, 0 0 0.2em pink; */
 
 }
  .container h1 img{
@@ -84,9 +84,9 @@ body {
 .container h2 {
   font-size: 32px;
   font-weight: 500;
-  color: pink;
+  color: rgb(75, 67, 216);
   margin-top: 20px;
-  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  /* text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue; */
 }
 
 /* new list item */
